@@ -45,11 +45,11 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/terminateButton"
+        android:id="@+id/checkButton"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:background="@drawable/buttomrounded"
-        android:text="@string/validate"
+        android:text="@string/check"
         android:textAllCaps="false"
         android:textSize="25sp"
         android:textStyle="bold"

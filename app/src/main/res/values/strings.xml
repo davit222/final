@@ -2,7 +2,7 @@
     <string name="app_name">Number Guessing Game</string>
     <string name="guess_the_number">Guess The Number</string>
     <string name="enter_the_number">Enter The Number</string>
-    <string name="guess_the_number_from_0_to_1000">Guess The Number From 0 To 1000</string>
+    <string name="guess_the_number_from_0_to_1000">Guess The Number</string>
     <string name="validate">Validate</string>
     <string name="sign_in">Sign In</string>
     <string name="enter_your_email">Enter Your Email</string>

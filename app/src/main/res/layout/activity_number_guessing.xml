@@ -8,6 +8,15 @@
     tools:context=".NumberGuessingActivity">
 
 
+    <TextView
+        android:id="@+id/userView"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"

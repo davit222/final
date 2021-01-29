@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         val intent = Intent(this, NumberGuessingActivity::class.java)
+                        intent.putExtra("email", "test")
                         startActivity(intent)
                         // Sign in success, update UI with the signed-in user's information
                         d("signIn", "signInWithEmail:success")

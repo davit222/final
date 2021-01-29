@@ -10,8 +10,8 @@ import kotlin.random.Random
 
 class NumberGuessingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-//        val user: String? = intent.extras?.getString("user_mail","")
-//        userView.text = user
+        val user: String? = intent.extras?.getString("email","")
+        userView.text = user.toString()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_number_guessing)
         var randomNum = randomNumber()

@@ -1,30 +1,28 @@
 package com.example.numberguessinggame
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_number_guessing.*
 import kotlin.random.Random
 
 
 class NumberGuessingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        val user: String? = intent.extras?.getString("email","")
-        userView.text = user.toString()
+        var attempts: Int = 1
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_number_guessing)
-        var randomNum = randomNumber()
+        val randomNum = randomNumber()
         checkButton.setOnClickListener {
-            val attempts = 0
             val enteredNumber = numberGuessingEditText.text.toString()
             if (randomNum > Integer.parseInt(enteredNumber)){
                 Toast.makeText(this, "Enter Higher Number", Toast.LENGTH_SHORT).show()
-                attempts+1
+                attempts++
             }
             else if (randomNum < Integer.parseInt(enteredNumber)){
                 Toast.makeText(this, "Enter The Lower Number", Toast.LENGTH_SHORT).show()
-                attempts+1
+                attempts++
             }
             else if (enteredNumber.isEmpty()){
                 Toast.makeText(this, "Please Fill Field", Toast.LENGTH_SHORT).show()

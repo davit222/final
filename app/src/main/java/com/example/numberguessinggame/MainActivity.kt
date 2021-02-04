@@ -1,12 +1,10 @@
 package com.example.numberguessinggame
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.util.Log.d
 import android.widget.Toast
-import android.widget.Toast.makeText
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -38,7 +36,6 @@ class MainActivity : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         val intent = Intent(this, NumberGuessingActivity::class.java)
-                        intent.putExtra("email", "test")
                         startActivity(intent)
                         // Sign in success, update UI with the signed-in user's information
                         d("signIn", "signInWithEmail:success")
